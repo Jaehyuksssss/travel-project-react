@@ -1,18 +1,10 @@
-Hello, My Friends  
-Thank you for having interest in this repository ! 
+React , node.js , mongoDB , Redux , Express Js을 사용해서 웹사이트를 만듭니다.
 
-To use this application, 
+Boiler Plate를 가져오고 Mongo DB와 연결하여 초기셋팅을 진행했습니다.
 
-1. make dev.js file inside config folder 
-2. put mongoDB info into dev.js file 
-3. Type  " npm install " inside the root directory  ( Download Server Dependencies ) 
-4. Type " npm install " inside the client directory ( Download Front-end Dependencies )
-
-
-If you have problem, feel free to ask me ^^ 
-
-You can watch the tutorial for this app.
-
-https://www.youtube.com/channel/UCFyXA9x8lpL3EYWeYhj4C4Q?view_as=subscriber
-
-
+upload 페이지 만들기
+1. 비어 있는 업로드 페이지 생성
+2. 업로드 페이지 Route 만들기
+3. 업로드 페이지 탭 만들기
+4. Drop zone을 제외한 Form 만들기 (file upload만을 위한 컴포넌트 만들기)
+5. 모든 Input을 위한 onChange Function 만들기.
