@@ -7,4 +7,4 @@ upload 페이지 만들기
 2. 업로드 페이지 Route 만들기
 3. 업로드 페이지 탭 만들기
 4. Drop zone을 제외한 Form 만들기 (file upload만을 위한 컴포넌트 만들기
-5. 모든 Input을 위한 onChange Function 만들기.
+5. 모든 Input을 위한 onChange Function 만들기
