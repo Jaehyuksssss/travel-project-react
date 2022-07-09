@@ -2,9 +2,17 @@ import React, { useState } from "react";
 import { Typography, Button, Form, Input } from "antd";
 import TextArea from "antd/lib/input/TextArea";
 
-const { Title } = Typography;
 const { textArea } = Input;
 
+const Contients = [
+  { key: 1, value: "Africa" },
+  { key: 2, value: "Europe" },
+  { key: 3, value: "Aisa" },
+  { key: 4, value: "North America" },
+  { key: 5, value: "South America" },
+  { key: 6, value: "Australia" },
+  { key: 7, value: "Antarctica" },
+];
 const UploadProductPage = () => {
   const [Title, setTitle] = useState("");
   const [Description, setDescription] = useState("");
@@ -22,6 +30,10 @@ const UploadProductPage = () => {
 
   const priceChangeHandler = (event) => {
     setPrice(event.currentTarget.value);
+  };
+
+  const contientChangeHandler = (event) => {
+    setContient(event.currentTarget.value);
   };
 
   return (
@@ -46,8 +58,12 @@ const UploadProductPage = () => {
         <Input type="number" onChange={priceChangeHandler} value={Price} />
         <br />
         <br />
-        <select>
-          <option></option>
+        <select onChange={contientChangeHandler} value={Contient}>
+          {Contients.map((item) => (
+            <option key={item.key} value={Contient}>
+              {item.value}
+            </option>
+          ))}
         </select>
         <br />
         <br />
